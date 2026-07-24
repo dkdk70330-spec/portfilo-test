@@ -20,6 +20,14 @@ window.PORTFOLIO_PROJECT = {
       {
         "id": "bloom",
         "url": "https://bloom-ai.me/profile/puddingcat"
+      },
+      {
+        "id": "caveduck",
+        "url": "https://caveduck.io/user/pudding_cat"
+      },
+      {
+        "id": "youtube",
+        "url": "https://youtube.com/playlist?list=PLVAtMjvdXrJoWQgXjVJTqxNakbhq0AtKC&si=7uowE-e9YhMQcXEr"
       }
     ],
     "background": "./assets/images/creator-background.png"
@@ -36,9 +44,19 @@ window.PORTFOLIO_CATALOG = {
       "icon": "./assets/catalog/profile-links/x.png"
     },
     {
+      "id": "youtube",
+      "name": "유튜브",
+      "icon": "./assets/catalog/profile-links/youtube.png"
+    },
+    {
       "id": "bloom",
       "name": "블룸",
       "icon": "./assets/catalog/profile-links/bloom.png"
+    },
+    {
+      "id": "caveduck",
+      "name": "케덕",
+      "icon": "./assets/catalog/profile-links/caveduck.png"
     }
   ],
   "platforms": [],
