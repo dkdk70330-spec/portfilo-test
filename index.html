@@ -35,40 +35,28 @@
           <a class="preview-social-link" href="https://x.com/6zerry9" target="_blank" rel="noreferrer" title="트위터" aria-label="트위터 열기">
             <img src="../template/images/profile-links/x.png" alt="">
           </a>
+        
+          <a class="preview-social-link" href="https://bloom-ai.me/profile/puddingcat" target="_blank" rel="noreferrer" title="블룸" aria-label="블룸 열기">
+            <img src="../template/images/profile-links/bloom.png" alt="">
+          </a>
         </div>
             <div class="hero-stats" aria-label="아카이브 요약">
-              <div><strong id="previewCharacterCount">1</strong><span>캐릭터</span></div>
-              <div><strong id="previewWorldCount">1</strong><span>세계관</span></div>
+              <div><strong id="previewCharacterCount">0</strong><span>캐릭터</span></div>
+              <div><strong id="previewWorldCount">0</strong><span>세계관</span></div>
               <div><strong id="previewGenreCount">0</strong><span>장르</span></div>
             </div>
           </div>
         </div>
       </article>
 
-      <section class="stardust-character-preview character-featured-preview" id="previewFeaturedSection" aria-labelledby="previewFeaturedTitle">
+      <section class="stardust-character-preview character-featured-preview" id="previewFeaturedSection" aria-labelledby="previewFeaturedTitle" hidden="">
         <div class="character-preview-heading">
           <div>
             <p class="eyebrow">FEATURED CHARACTERS</p>
             <h2 id="previewFeaturedTitle">추천 캐릭터</h2>
           </div>
         </div>
-        <div class="character-featured-grid" id="previewFeaturedGrid">
-      <article class="character-preview-card is-featured" data-preview-character-card="character-e8e842ad-1f1a-4854-af14-f63657cd7e2d">
-        <button type="button" class="character-preview-card-button" data-preview-character="character-e8e842ad-1f1a-4854-af14-f63657cd7e2d" aria-label="마물전생 상세 보기">
-          <div class="character-preview-card-image-wrap">
-            <img alt="마물전생 대표 이미지" loading="lazy">
-            <div class="character-preview-card-platforms"><span class="character-preview-platform-dot" title="블룸"><img src="../template/images/platforms/bloom.png" alt=""></span></div>
-            <span class="archive-music-mark" title="음악 있음" aria-hidden="true">♫</span>
-          </div>
-          <div class="character-preview-card-body">
-            <div class="character-preview-card-genres"></div>
-            <h3>마물전생</h3>
-            <p>알에서 시작하는 진화의 길</p>
-            <span class="character-preview-card-more">상세 보기 <b aria-hidden="true">↗</b></span>
-          </div>
-        </button>
-      </article>
-    </div>
+        <div class="character-featured-grid" id="previewFeaturedGrid"></div>
       </section>
 
       <section class="stardust-world-preview" id="previewWorldSection" aria-labelledby="previewWorldTitle">
@@ -79,34 +67,14 @@
           </div>
         </div>
 
-        <div class="world-grid" id="previewWorldGrid">
-      <article class="world-card">
-        <button class="world-card-button" type="button" data-preview-world="world-c06ffe80-4ad9-4b4c-989c-7654784f4825" aria-label="아르테아 세계관 보기">
-          <div class="world-card-image">
-            <img alt="" loading="lazy">
-            <div class="world-face-stack" aria-label="연결된 캐릭터">
-      <span class="world-face" title="마물전생">
-        <img alt="" loading="lazy">
-      </span>
-    </div>
-            
-          </div>
-          <div class="world-card-body">
-            <div class="world-card-meta"><span>1 Characters</span><b aria-hidden="true">↗</b></div>
-            <h3>아르테아</h3>
-            <p>세계관 부제를 입력해 주세요.</p>
-            <div class="world-card-tags"><span>판타지</span></div>
-          </div>
-        </button>
-      </article>
-    </div>
+        <div class="world-grid" id="previewWorldGrid" hidden=""></div>
         <div class="archive-toggle-wrap" id="previewWorldToggleWrap" hidden="">
           <button class="archive-toggle is-expanded" id="previewWorldToggle" type="button" aria-controls="previewWorldGrid" aria-expanded="true">
             <span>세계관 접기</span>
             <b aria-hidden="true">↓</b>
           </button>
         </div>
-        <p id="previewWorldEmpty" class="world-preview-empty" hidden="">
+        <p id="previewWorldEmpty" class="world-preview-empty">
           아직 등록된 세계관이 없습니다.
         </p>
       </section>
@@ -117,7 +85,7 @@
             <p class="eyebrow">FULL ARCHIVE</p>
             <h2 id="previewCharacterTitle">캐릭터 아카이브</h2>
           </div>
-          <p id="previewCharacterResultSummary" aria-live="polite">총 1명 중 1명 표시</p>
+          <p id="previewCharacterResultSummary" aria-live="polite">총 0명 중 0명 표시</p>
         </div>
 
         <div class="controls" aria-label="캐릭터 검색 및 필터">
@@ -149,16 +117,6 @@
         
       </button>
     
-      <button class="filter-chip  " type="button" aria-pressed="false" data-character-filter-group="tag" data-character-filter-value="이세계" data-character-filter-selected="false">
-        <span>이세계</span>
-        
-      </button>
-    
-      <button class="filter-chip  " type="button" aria-pressed="false" data-character-filter-group="tag" data-character-filter-value="판타지" data-character-filter-selected="false">
-        <span>판타지</span>
-        
-      </button>
-    
         <button class="filter-more" type="button" data-character-filter-more="tag" aria-haspopup="dialog" hidden="">
           더보기 <b>+0</b>
         </button>
@@ -169,11 +127,6 @@
               <div class="chip-list" id="previewPlatformFilters" data-character-filter-row="platform">
       <button class="filter-chip  active" type="button" aria-pressed="true" data-character-filter-group="platform" data-character-filter-value="전체" data-character-filter-selected="true">
         <span>전체</span>
-        
-      </button>
-    
-      <button class="filter-chip  " type="button" aria-pressed="false" data-character-filter-group="platform" data-character-filter-value="bloom" data-character-filter-selected="false">
-        <span>블룸</span>
         
       </button>
     
@@ -190,11 +143,6 @@
         
       </button>
     
-      <button class="filter-chip  " type="button" aria-pressed="false" data-character-filter-group="world" data-character-filter-value="world-c06ffe80-4ad9-4b4c-989c-7654784f4825" data-character-filter-selected="false">
-        <span>아르테아</span>
-        
-      </button>
-    
         <button class="filter-more" type="button" data-character-filter-more="world" aria-haspopup="dialog" hidden="">
           더보기 <b>+0</b>
         </button>
@@ -203,30 +151,14 @@
           </div>
         </div>
 
-        <div class="character-preview-grid" id="previewCharacterGrid">
-      <article class="character-preview-card " data-preview-character-card="character-e8e842ad-1f1a-4854-af14-f63657cd7e2d">
-        <button type="button" class="character-preview-card-button" data-preview-character="character-e8e842ad-1f1a-4854-af14-f63657cd7e2d" aria-label="마물전생 상세 보기">
-          <div class="character-preview-card-image-wrap">
-            <img alt="마물전생 대표 이미지" loading="lazy">
-            <div class="character-preview-card-platforms"><span class="character-preview-platform-dot" title="블룸"><img src="../template/images/platforms/bloom.png" alt=""></span></div>
-            <span class="archive-music-mark" title="음악 있음" aria-hidden="true">♫</span>
-          </div>
-          <div class="character-preview-card-body">
-            <div class="character-preview-card-genres"></div>
-            <h3>마물전생</h3>
-            <p>알에서 시작하는 진화의 길</p>
-            <span class="character-preview-card-more">상세 보기 <b aria-hidden="true">↗</b></span>
-          </div>
-        </button>
-      </article>
-    </div>
+        <div class="character-preview-grid" id="previewCharacterGrid" hidden=""></div>
         <div class="character-archive-toggle-wrap" id="previewCharacterToggleWrap" hidden="">
           <button class="character-archive-toggle is-expanded" id="previewCharacterToggle" type="button" aria-controls="previewCharacterGrid" aria-expanded="true">
             <span>캐릭터 접기</span>
             <b aria-hidden="true">↓</b>
           </button>
         </div>
-        <div class="empty-state" id="previewCharacterEmpty" hidden="">
+        <div class="empty-state" id="previewCharacterEmpty">
           <span>◇</span>
           <h3>조건에 맞는 캐릭터가 없어요.</h3>
           <p>검색어나 필터를 조금 느슨하게 풀어보세요.</p>
@@ -263,61 +195,33 @@
       <button class="character-preview-modal-close" id="characterPreviewModalClose" type="button" aria-label="캐릭터 상세 닫기">×</button>
       <div class="character-preview-gallery">
         <header class="character-preview-identity">
-          <h2 id="characterPreviewModalTitle">마물전생</h2>
-          <p id="characterPreviewModalSummary">알에서 시작하는 진화의 길</p>
+          <h2 id="characterPreviewModalTitle"></h2>
+          <p id="characterPreviewModalSummary"></p>
         </header>
         <div class="character-preview-main-image-wrap">
-          <img id="characterPreviewMainImage" alt="마물전생 이미지 1">
-          <div id="characterPreviewMainImageFallback" class="character-preview-main-image-fallback" hidden="">CHARACTER</div>
+          <img id="characterPreviewMainImage" src="" alt="" hidden="">
+          <div id="characterPreviewMainImageFallback" class="character-preview-main-image-fallback">CHARACTER</div>
         </div>
         <div class="character-preview-thumbnails" id="characterPreviewThumbnails" hidden=""></div>
-        <div class="character-preview-platform-rail" id="characterPreviewPlatforms"><a href="https://bloom-ai.me/content/7779a492-d4a9-4f52-9b4f-9b59431d1a10" target="_blank" rel="noreferrer" title="블룸"><img src="../template/images/platforms/bloom.png" alt=""><span class="sr-only">블룸</span></a></div>
+        <div class="character-preview-platform-rail" id="characterPreviewPlatforms"></div>
       </div>
       <article class="character-preview-modal-content">
-        <div class="character-preview-kicker" id="characterPreviewKicker">CHARACTER</div>
-        <div class="character-preview-tag-list" id="characterPreviewModalTags"><span>판타지</span><span>이세계</span></div>
-        <section class="soundtrack-panel" id="characterPreviewSoundtrack" aria-label="캐릭터 음악" data-soundtrack-owner="character-e8e842ad-1f1a-4854-af14-f63657cd7e2d" data-soundtrack-active="0">
-    <header class="soundtrack-heading">
-      <span>
-        <small>SOUNDTRACK</small>
-        <strong>이 이야기의 음악</strong>
-      </span>
-      <b aria-hidden="true">♫</b>
-    </header>
-
-    <div class="soundtrack-player">
-      
-        <div class="soundtrack-now-playing">
-          <span class="soundtrack-disc" aria-hidden="true">♫</span>
-          <span><small>NOW PLAYING</small><strong>부재</strong></span>
-        </div>
-        <audio class="soundtrack-audio" controls="" controlslist="nodownload noplaybackrate" disablepictureinpicture="" preload="metadata"></audio>
-      
-    </div>
-
-    
-  </section>
-        <div class="character-preview-description" id="characterPreviewModalDescription"><p>어쩌고 저쩌고 뭐라도 되어보자</p></div>
-        <section class="character-preview-world-panel" id="characterPreviewWorldPanel">
-          <button class="character-preview-world-button" id="characterPreviewWorldButton" type="button" data-preview-world="world-c06ffe80-4ad9-4b4c-989c-7654784f4825">
+        <div class="character-preview-kicker" id="characterPreviewKicker"></div>
+        <div class="character-preview-tag-list" id="characterPreviewModalTags"></div>
+        <section class="soundtrack-panel" id="characterPreviewSoundtrack" aria-label="캐릭터 음악" hidden=""></section>
+        <div class="character-preview-description" id="characterPreviewModalDescription"></div>
+        <section class="character-preview-world-panel" id="characterPreviewWorldPanel" hidden="">
+          <button class="character-preview-world-button" id="characterPreviewWorldButton" type="button">
             <span>
               <small>SHARED WORLD</small>
-              <strong id="characterPreviewWorldName">아르테아</strong>
+              <strong id="characterPreviewWorldName"></strong>
               <em id="characterPreviewWorldSummary"></em>
             </span>
             <b>세계 구경하기 ↗</b>
           </button>
         </section>
-        <section class="character-preview-content-section" id="characterPreviewContentSection">
-          <div class="character-preview-content-list" id="characterPreviewContents">
-      <article class="character-preview-content-box is-public">
-        <header>
-          <span class="character-preview-content-icon">✦</span>
-          <span><small>추가 정보</small><strong>제목 없는 콘텐츠</strong></span>
-        </header>
-        <div class="character-preview-content-body"></div>
-      </article>
-    </div>
+        <section class="character-preview-content-section" id="characterPreviewContentSection" hidden="">
+          <div class="character-preview-content-list" id="characterPreviewContents"></div>
         </section>
       </article>
     </div>

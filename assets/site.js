@@ -792,6 +792,14 @@
           </details>
         `;
       }
+      if (item.collapsible) {
+        return `
+          <details class="character-preview-content-box is-public is-collapsible">
+            <summary><span class="character-preview-content-icon">✦</span><span><small>${escapeHtml(type)}</small><strong>${escapeHtml(title)}</strong></span><b aria-hidden="true">⌄</b></summary>
+            <div class="character-preview-content-body">${body}</div>
+          </details>
+        `;
+      }
       return `
         <article class="character-preview-content-box is-public">
           <header><span class="character-preview-content-icon">✦</span><span><small>${escapeHtml(type)}</small><strong>${escapeHtml(title)}</strong></span></header>
